@@ -129,14 +129,14 @@ fn run_tests() {
     }
 }
 
-// macro_rules! map {
-//     ( $( $key:expr => $value:expr ),* $(,)? ) => {{
-//         #[allow(unused_mut)]
-//         let mut m = IndexMap::new();
-//         $(m.insert($key, $value);)*
-//         m
-//     }};
-// }
+macro_rules! map {
+    ( $( $key:expr => $value:expr ),* $(,)? ) => {{
+        #[allow(unused_mut)]
+        let mut m = IndexMap::new();
+        $(m.insert($key, $value);)*
+        m
+    }};
+}
 
 // #[test]
 // fn petstore_discriminated() {
