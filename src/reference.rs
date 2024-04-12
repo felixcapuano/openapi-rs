@@ -27,7 +27,7 @@ impl<T> ReferenceOr<T> {
     /// # Examples
     ///
     /// ```
-    /// # use openapiv3::ReferenceOr;
+    /// # use openapirs::ReferenceOr;
     ///
     /// let i = ReferenceOr::Item(1);
     /// assert_eq!(i.into_item(), Some(1));
@@ -49,7 +49,7 @@ impl<T> ReferenceOr<T> {
     /// # Examples
     ///
     /// ```
-    /// # use openapiv3::ReferenceOr;
+    /// # use openapirs::ReferenceOr;
     ///
     /// let i = ReferenceOr::Item(1);
     /// assert_eq!(i.as_item(), Some(&1));

@@ -187,7 +187,8 @@ mod tests {
     #[test]
     fn test_slack_auth() {
         let openapi: OpenAPI =
-            serde_json::from_reader(std::fs::File::open("fixtures/slack.json").unwrap()).unwrap();
+            serde_json::from_reader(std::fs::File::open("fixtures/v30/slack.json").unwrap())
+                .unwrap();
 
         assert!(matches!(
             openapi
